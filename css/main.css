@@ -39,7 +39,7 @@ button{
 
 .white button{
     padding: 0.5rem 0;
-    width: 80%;
+    width: 70%;
     background-color: #272727;
     color: #fff;
     border-radius: 20px;
@@ -51,18 +51,31 @@ button{
 }
 
 .toptext{
+    height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     bottom: 0;
     right: 0;
     margin: auto;
-    font-size: min(8vw,80px);
+    font-size: 8vw;
     font-weight: bold;
+    height: 0.56vw;
+}
+
+.toptext.wrap{
+    top: 0;
+    bottom: 0;
+    flex-flow: column;
+}
+
+.toptext p{
+    text-align: right;
+    margin: 0;
 }
 
 .small{
-    font-size: 1rem;
+    font-size: 1.5vw;
     font-weight: 100;
 }
 
@@ -76,6 +89,10 @@ button{
 
 ._FBC64B{
     color: #FBC64B;
+}
+
+.panel{
+    margin: 20px 0;
 }
 
 .wrap{
@@ -116,7 +133,7 @@ button{
 .yellow{
     margin: 0 auto;
     background-color: #FBC64B;
-    width: 85%;
+    width: 80%;
     border-radius: 20px;
     padding: 20px 0;
 }
@@ -128,4 +145,42 @@ button{
     border: #000 1px solid;
     position: absolute;
     transform: rotate(-15deg);
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    .over{
+        width: 100vw;
+        margin: 0 calc(50% - 50vw);
+    }
+
+    .slide{        
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding:  0 20px;    
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        justify-content: left;
+    }
+
+    .slide .box{
+        scroll-snap-align: center;
+        width: 80%;
+    }
+
+    .spcolumn{
+        flex-flow: column;
+    }
+
+    .box{
+        width: 90%;
+        flex: 0 0 auto;
+    }
+
+    .spcolumn .box{
+        margin: 10px 0;
+    }
 }
