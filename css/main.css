@@ -1,0 +1,131 @@
+html{
+    background-color: #000;
+    font-size: 62.5%;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    padding: 1.5rem 6rem;
+    border: none;
+    line-height: 1.5;
+    position: relative;
+    margin: 10px auto 0;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border-radius: 100vh;
+}
+
+.white button{
+    padding: 0.5rem 0;
+    width: 80%;
+    background-color: #272727;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+.top{
+    position: relative;
+}
+
+.toptext{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: min(8vw,80px);
+    font-weight: bold;
+}
+
+.small{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+._FC427F{
+    color: #FC427F;
+}
+
+._258BFA{
+    color: #258BFA;
+}
+
+._FBC64B{
+    color: #FBC64B;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    aspect-ratio: 1/1;
+    position: relative;
+    margin: 10px;
+    width: min(30vw,324px);
+}
+
+.white{
+    display: table;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.boxcontent{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.white img{
+    width: 95%;
+    border-radius: 20px;
+}
+
+.invete{
+    position: relative;
+}
+
+.yellow{
+    margin: 0 auto;
+    background-color: #FBC64B;
+    width: 85%;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.label{
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #000;
+    border: #000 1px solid;
+    position: absolute;
+    transform: rotate(-15deg);
+}
